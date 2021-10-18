@@ -121,6 +121,8 @@ namespace BaseNConverter
                     StringBuilder formula = new StringBuilder();
                     if ((int)firstBaseN.Value == 10)
                         SecondValue.Text = DecimalToBaseN(int.Parse(FirstValue.Text), (int)secondBaseN.Value, formula);
+                    else if((int)secondBaseN.Value == 10)
+                        SecondValue.Text = BaseNToDecimal(FirstValue.Text, (int)firstBaseN.Value, formula).ToString();
                     else if ((int)firstBaseN.Value == (int)secondBaseN.Value)
                     {
                         formula.Append($"{FirstValue.Text} = {SecondValue.Text} \n");
