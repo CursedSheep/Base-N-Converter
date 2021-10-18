@@ -1,6 +1,6 @@
 # Simple Base N Converter
 
-A simple application that uses decimal as intermediary to convert values to base N.
+A simple application that uses decimal as an intermediary to convert values to base N with procedures.
 
 ## Screenshot
 
